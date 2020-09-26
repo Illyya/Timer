@@ -36,6 +36,13 @@ img{max-width: 100%;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+@font-face {
+	font-family: 'GothaPro';
+	src: local('☺'), url('../fonts/GothaProReg.woff') format('woff'), url('../fonts/GothaProReg.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .container {
     max-width: 775px;
     margin: 0 auto;     
@@ -47,7 +54,7 @@ html {
 
 body {
     background-color: #353638;
-    
+    font-family: 'GothaPro';
 }
 
 .timers {
@@ -96,7 +103,6 @@ body {
         }
 
         &__pause {
-            display: none;
             &:hover {
                 cursor: pointer;
             }
